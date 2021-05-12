@@ -171,7 +171,6 @@ class TorClient {
 
 
         let result = await rp(rp_options);
-        await this.confirmNewTorConnection();
         return result;
     }
 
@@ -193,7 +192,6 @@ class TorClient {
         };
 
         let result = await rp(rp_options);
-        await this.confirmNewTorConnection();
         return result;
     }
 }
